@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="menu" class="blue">
+        <a href="/">main</a>
+        <a href="/register">register</a>
+        <a href="/login">login</a>
+        <a href="/admin">admin</a>
+    </div>
+    <div id="content">
+        <p class="backgroundInfo">register page</p>
+        <form method="POST" action="/register" id="registerForm">
+            <table id="registerTable">
+                <tr>
+                    <td><label for="login">login: </label></td>
+                    <td><input type="text" name="login" id="login" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">password: </label></td>
+                    <td><input type="password" name="password" id="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">wiek: </label></td>
+                    <td>
+                        <select name="age" id="age" required>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="student">uczeń?: </label></td>
+                    <td><input type="checkbox" name="student" id="student"></td>
+                </tr>
+                <tr>
+                    <td><label>płeć: </label></td>
+                    <td>
+                        <input type="radio" name="plec" id="plecK" class="plec" value="k" required>
+                        <label for="plecK">K</label>
+                        <input type="radio" name="plec" id="plecM" class="plec" value="m" required>
+                        <label for="plecM">M</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="submit">Submit</button></td>
+                </tr>
+            </table>
+            
+        </form>
+    </div>
+</body>
+
+</html>
